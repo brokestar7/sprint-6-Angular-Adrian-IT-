@@ -10,7 +10,7 @@ import { EscenaComponent } from './escena/escena.component';
     AppComponent,
     HomeComponent,
     EscenaComponent,
-
+    // 
   ],
   imports: [
     BrowserModule
