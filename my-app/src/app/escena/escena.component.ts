@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { cuento } from '../interface';
 
 @Component({
   selector: 'app-escena',
@@ -7,7 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class EscenaComponent implements OnInit {
 
-  @Input() textosEs:any;
+  // @Input() textosEs:any;
+
+  @Input()  public textos :cuento[] = [{texto:""}] ;
 
   constructor() { }
 
