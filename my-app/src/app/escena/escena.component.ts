@@ -26,7 +26,7 @@ export class EscenaComponent implements OnInit {
   }
 
   next(){
-    if(this.currentsentence>3){
+    if(this.currentsentence>2){
       this.currentsentence = 0;
       this.id=0;
     }
