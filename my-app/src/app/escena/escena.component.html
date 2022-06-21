@@ -1,11 +1,14 @@
 <div style="text-align: center;">
-    <button type="button" style="width: 50%; height: 90px;">Anterior</button>
-    <button type="button" style="width: 50%; height: 90px;">Següent</button>
+    <button type="button" (click)="prev()" style="width: 50%; height: 90px;">Anterior</button>
+    <button type="button" (click)="next()" style="width: 50%; height: 90px;">Següent</button>
 </div>
 
 
 <div>
-    <ul *ngFor="let textoCuento of textos" style="list-style: none;" >
-        <li style="padding: 8px; border: 2px solid black; border-radius: 20px; color: red; ">{{textoCuento.texto}}</li>
+    <ul *ngFor="let textoCuento of textos; let i = index; " style="list-style: none;">
+        <li  [style.backgroundColor]="currentsentence === i ? 'rgb(218, 38, 38)': 'rgb(255, 255, 255, 0.50)'"; style="padding: 8px; border: 2px solid black; border-radius: 20px; color: black; ">{{textoCuento.texto}}</li>
     </ul>
 </div>
+
+
+<!-- [ngClass]="{'selected':(currentsentence==id), 'notSelected':(currentsentence!=id)}" id="{{i}}" style="padding: 8px; border: 2px solid black; border-radius: 20px; color: black; " -->

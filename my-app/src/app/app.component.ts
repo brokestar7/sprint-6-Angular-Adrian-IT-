@@ -21,10 +21,6 @@ export class AppComponent {
       
       
   ]
-
-
-
-
     
     
   
