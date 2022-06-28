@@ -9,7 +9,7 @@ import { cuento } from '../interface';
 })
 export class EscenaComponent implements OnInit {
 
-  // @Input() textosEs:any;
+  @Input()  public textos :cuento[] = [{texto:""}] ;
 
   currentsentence:number = 0;
   id:any = 0;
@@ -37,7 +37,6 @@ export class EscenaComponent implements OnInit {
   }
 
 
-  @Input()  public textos :cuento[] = [{texto:""}] ;
 
   constructor() { }
 
